@@ -8,20 +8,30 @@ export default class App extends React.Component {
     // static propTypes = {
 
     // }
-    state = {
-        comments: [
-            { username: 'Tom', content: 'React' },
-            { username: 'Jack', content: 'Vue' }
-        ]
+    constructor(props) {
+        super(props);
+        this.state = {
+            comments: [
+                { username: 'Tom', content: 'React' },
+                { username: 'Jack', content: 'Vue' }
+            ]
+        }
+        this.delete = this.delete.bind(this)
     }
 
+    commentAdd = (comment) => {
+        let comments = this.state.comments;
+        comments.unshift(comment);
+        this.setState({ comments: comments });
+    }
+
+    delete(index) {
+        let comments = this.state.comments;
+        comments.splice(index, 1)
+        this.setState({ comments })
+    }
 
     render() {
-        let commentAdd = (comment) => {
-            let comments = this.state.comments;
-            comments.unshift(comment);
-            this.setState({ comments: comments });
-        }
         const comments = this.state.comments;
         return (
             <div>
@@ -35,8 +45,8 @@ export default class App extends React.Component {
                     </div>
                 </header>
                 <div className="container">
-                    <Add commentAdd={commentAdd} />
-                    <List comments={comments} />
+                    <Add commentAdd={this.commentAdd} />
+                    <List comments={comments} del={this.delete} />
                 </div>
             </div>
         )
