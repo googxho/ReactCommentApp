@@ -14,4 +14,13 @@
 - 使用 pubsub-js 库实现发布-订阅模式的消息传递  
 - 使用axios 调用GitHub API获取搜索数据
 
+安装项目运行依赖
+```
+npm install
+```
+启动并运行项目
+```
+npm run start
+```
+
 ![项目接图](./项目接图.png)
