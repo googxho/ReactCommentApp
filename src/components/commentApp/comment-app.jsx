@@ -39,7 +39,7 @@ export default class App extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-xs-12">
-                                <h1>请发表对React的评论</h1>
+                                <h2>请发表对React的评论</h2>
                             </div>
                         </div>
                     </div>
