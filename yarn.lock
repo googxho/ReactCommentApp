@@ -9094,6 +9094,11 @@
     "randombytes" "^2.0.1"
     "safe-buffer" "^5.1.2"
 
+"pubsub-js@^1.9.3":
+  "integrity" "sha1-Z07qTVaNBALgUnzbEOKqt7VWIdI="
+  "resolved" "https://registry.npm.taobao.org/pubsub-js/download/pubsub-js-1.9.3.tgz"
+  "version" "1.9.3"
+
 "pump@^2.0.0":
   "integrity" "sha512-ruPMNRkN3MHP1cWJc9OWr+T/xDP0jhXYCLfJcBuX54hhfIBnaQmAUMfDcG4DM5UMWByBbJY69QSphm3jtDKIkA=="
   "resolved" "https://registry.npmjs.org/pump/-/pump-2.0.1.tgz"
