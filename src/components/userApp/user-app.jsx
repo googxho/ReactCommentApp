@@ -28,11 +28,6 @@ export default class App1 extends React.Component {
 
   // 方式二：使用 发布-订阅 机制传递消息（不需要再借助父组件）
 
-  searchName = (name) => {
-    let { searchName } = this.state;
-    searchName = name;
-    this.setState({ searchName: searchName })
-  }
   render() {
     return (
       <div className="container">
