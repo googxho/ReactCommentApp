@@ -4,6 +4,8 @@ import { BrowserRouter ,HashRouter} from 'react-router-dom';
 import App from './components/routeApp/route-app';
 import reportWebVitals from './reportWebVitals';
 
+import './index.css'
+
 ReactDOM.render(
   // 浏览器路由
   // <BrowserRouter>

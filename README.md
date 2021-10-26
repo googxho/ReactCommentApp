@@ -1,3 +1,7 @@
+项目截图
+
+![截图](./image.png)
+
 ### 1. 理解react-router
 	react的一个插件库
 	专门用来实现一个SPA应用
