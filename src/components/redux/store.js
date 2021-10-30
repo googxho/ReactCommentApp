@@ -1,6 +1,8 @@
 // store 对象
 import { createStore ,applyMiddleware} from 'redux';
 import thunk from 'redux-thunk'; // 
+
+
 // redux 调试工具配合 redux devtools浏览器插件使用
 import { composeWithDevTools } from 'redux-devtools-extension'
 
